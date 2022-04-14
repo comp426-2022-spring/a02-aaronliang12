@@ -9,7 +9,7 @@ if(call == null){
     
 }
 else if  (call != "heads" && call != "tails"){
-    console.error("Usage: node guess-flip --call=[heads|tails]");
+    console.log("Usage: node guess-flip --call=[heads|tails]");
 }
 else{
     console.log(defaultExport.flipACoin(call));
