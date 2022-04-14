@@ -4,8 +4,11 @@ const argv = minimist(process.argv.slice(2))
 
 var call = argv["call"]
 
-if(call == null || (call != "heads" && call != "tails")){
+if(call == null){
     console.error("Error: no input");
+    
+}
+else if  (call != "heads" && call != "tails"){
     console.error("Usage: node guess-flip --call=[heads|tails]");
 }
 else{
